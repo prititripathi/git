@@ -1,0 +1,689 @@
+
+
+<html lang="en" class="js">
+<head>
+    <meta charset="utf-8">
+    <title>mts Banka</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+    <link rel="shortcut icon" href="/webapp/Themes/MTS/img/icons/favicon.png" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="referrer" content="origin" />
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <meta property="og:site_name" content="">
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBBt2prP_feQ7VlmQ2NCR9WqFqgHfoT1us"></script>
+
+
+    <link href="/webapp/bundles/vendorcss?v=K_5H_tp81DZsdIChHuphdHBnv-QPtx63ff-BRdo2_w81" rel="stylesheet"/>
+<link href="/webapp/bundles/corecss?v=1GpQiB839A41ZmndO-iHPRhhI5mC9mDz0idjE68tyLc1" rel="stylesheet"/>
+
+    <script src="/webapp/bundles/vendorjs?v=1sB17Zl0FsJqvK4uTlNeaYy9dADvdUysrvDzzgHdfXo1"></script>
+<script src="/webapp/bundles/corejs?v=5uMjsgRWH8cfWjMBXPPldU6hxEH-kv0kRowTlZZknRc1"></script>
+
+
+    <!-- WebAPI Client Code JS (owner: Enterprise Customer) -->
+    <script src="/webapp/Themes/MTS/LiveChat/refimplementation/js/app.js"></script>
+
+    <!-- AIC webAPI loader JS (AIC) -->
+    <script type="text/javascript" src="/webapp/Themes/MTS/LiveChat/sdk/js/loader.js"></script>
+    <script>
+        $(document).ready(function () {
+           $('#videoModalPopUp').hide();
+        });
+
+
+    </script>
+    
+
+
+
+
+
+    
+        </head>
+
+        <body class="page-login" data-utility="dewebInit" data-is-priority="true" data-decimal-sep="," data-group-sep="." data-date-format="d.M.yyyy." data-default-container="page-content" data-default-popup-content="page-content" data-base-path="/webapp/" data-log-upload-error-path="/webapp//Error/LogImageUploadError" data-culture="sr-Latn-RS" >
+
+
+            
+            <header id="page-header" class="page-header login-header solid">
+
+                <div class="container">
+                    <div class="site-branding">
+                        <h1 class="logo"><a href="/webapp/">MTS Bank</a></h1>
+                    </div>
+
+                    <nav>
+                        <div class="menu-trigger" data-utility="menuTrigger activateLoginMenu">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <ul class="login-menu">
+                            <li><a href="#" data-utility="popupFromLink" data-popup-type="wide" data-href="/webapp/Info/Products"><i class="catalogue-icon"></i>Katalog proizvoda</a></li>
+                            <li><a href="#" data-utility="popupFromLink" data-popup-type="wide" data-href="/webapp/Info/ExchangeRates"><i class="refresh-icon"></i>Menjačnica</a></li>
+                            <li><a href="#" data-utility="popupFromLink" data-popup-type="wide" data-href="/webapp/Location/FacilitiesOperations/GetList"><i class="map-branches-icon"></i>Bankomati/Ekspoziture</a></li>
+                            <li><a href="#" data-utility="popupFromLink" data-popup-type="wide" data-href="/webapp/Dialog/FAQs/GetList"><i class="faq-icon"></i>Često postavljana pitanja</a></li>
+                            <li><a href="#" data-utility="popupFromLink" data-popup-type="wide" data-href="/webapp/Info"><i class="contact-icon"></i>Kontakt</a></li>
+                        </ul>
+
+
+
+                        <ul class="lang-nav">
+                            <li class="active">
+                                <a href="/webapp/Identity/Login?language=sr-latn-rs">Sr</a>
+                            </li>
+
+                            <li class="">
+                                <a href="/webapp/Identity/Login?language=en-us">En</a>
+                            </li>
+                            <li>
+                                <a href="#" title="Kliknite ovode kako biste pokrenuli chat sa agentom Call Centra mts Banke" class="chat-starter" onclick="requestChat(true)" style="width:30px;">&nbsp;&nbsp;</a>
+                            </li>
+                                                        <li>
+                                <a href="#" title="Kliknite ovode kako biste pokrenuli video komunikaciju sa agentom Call Centra mts Banke" class="video-starter" data-utility="requestVideoCall"
+                                   data-cafexshortcodeendpoint="https://datapwtest.telekom.rs:8052/assistserver/shortcode/create"
+                                   data-sipdestination="sip:57502@10.20.22.131"
+                                   data-popupurl="https://uat1.mtsbanka.rs/webapp/blanko.html"
+                                   data-locale="sr"
+                                   data-tokenurl="/webapp/CafeX/SessionToken"
+                                    style="width:45px;">&nbsp;&nbsp;</a>
+                                <a href="#" title="Kliknite ovde kako biste pekinuli video komunikaciju i/ili deljenje ekrana sa agentom Call Centra mts Banke" data-utility="endLASupport" style="width:45px;display:none;">STOP</a>
+                            </li>
+                        </ul>
+
+                    </nav>
+
+                </div>
+
+            </header>
+            <div id="cid-gui" onclick="endSupport()" hidden>
+                <button>END SUPPORT</button>
+            </div> 
+            <div class="bg-wallpaper login-2"></div>
+            
+                <div data-utility="preloginSessionTimeoutOnMainPage" data-helptext="Da li Vam je potrebna pomoć?" data-seconds="55" data-content-path="/webapp/Themes/MTS/">
+                </div>
+            <div id="main-wrapper" class="main-wrapper login-screen main-wrapper" >
+                <div class="container">
+                    <div class="login-wrapper login-credentials" id="login-credentials">
+                        
+
+<div class="login-window" id="login-window">
+    <div id="reloadingDiv" style="display:none" >
+    </div>   
+    <div class="utility-only"
+         data-utility="subProcessManager"
+         data-subprocess-href=""
+         data-return-url="/webapp/Identity/Login?workItemId=b24ac5ed-3d6d-4a5f-aad0-a06de38f1160"
+         data-subprocess-info="null"
+         data-subprocesses="[{&quot;Action&quot;:&quot;Index&quot;,&quot;Controller&quot;:&quot;EmailVerification&quot;,&quot;Area&quot;:&quot;Authorization&quot;,&quot;OnEventId&quot;:null,&quot;SubProcessId&quot;:null,&quot;SubProcessShortName&quot;:&quot;EmailVerification&quot;,&quot;Description&quot;:null,&quot;ExpectedOutputs&quot;:null,&quot;Input&quot;:null,&quot;Done&quot;:false,&quot;StartNow&quot;:false,&quot;Style&quot;:null,&quot;Placement&quot;:0,&quot;WizardAction&quot;:2,&quot;StartsOn&quot;:3,&quot;Type&quot;:1}]"
+         data-parent-placement="2"
+         data-is-priority="true"
+         style="display: none"></div>
+
+
+
+<form action="/webapp/Identity/Login" autocomplete="off" data-ajax="true" data-ajax-begin="DeWeb.AjaxForms.OnAjaxBegin(&#39;login-window&#39;);" data-ajax-complete="DeWeb.AjaxForms.OnAjaxComplete(&#39;login-window&#39;);" data-ajax-failure="DeWeb.AjaxForms.OnAjaxFailure(&#39;login-window&#39;);" data-ajax-method="post" data-ajax-mode="replace" data-ajax-success="DeWeb.AjaxForms.OnAjaxSuccess(&#39;login-window&#39;);" data-ajax-update="#login-credentials" id="upLoginForm" method="post">    <input type="hidden" id="workitemId" name="workitemid" value="b24ac5ed-3d6d-4a5f-aad0-a06de38f1160" />
+    <h3 class="title-2 no-border">Postojeći korisnik</h3>
+    <form action="#" method="#" class="inner-shadow-form">
+        <div class="group user">
+            
+            <input type="text"  class="  left size-s   " placeholder="Korisničko ime" name="Username_ID" id="Username_ID" value="" data-utility="textBoxFormField" maxlength=2147483647/>
+
+        </div>
+        <div class="group pass">
+            
+
+                <input type="password" placeholder="Lozinka" id="Password_ID" name="Password_ID" class="input-1" data-utility="passwordFormField">
+
+        </div>
+        
+        
+        
+        
+        <div class="group divide-half">
+            <div class="half">
+                <div class="safety-avatar-login">
+                    <div class="avatar-img">
+                        <img id="userPicture" src="/webapp/Themes/MTS/img/assets/safe.png" alt="Sigurnosna slika">
+                    </div>
+                    <p>Sigurnosna slika</p>
+                </div>
+            </div>
+            <div class="half">
+                <button type="submit" id="1" name="1" class="btn-1">Prijava</button>
+            </div>
+        </div>
+    </form>
+    <a id="forgotPassword" class="jumptarget-anchor" style="content: ''; display: block;height: 110px;margin: -110px 0 0;"></a>
+    <a href="#" data-utility="popupFromLink" data-popup-type="narrow" data-href="/webapp/Identity/ForgotUsername">Da li ste zaboravili korisničko ime?</a>
+    <a href="#" data-utility="popupFromLink" data-popup-type="narrow" data-href="/webapp/Identity/ResetPassword">Da li ste zaboravili lozinku?</a>
+    <script type="text/javascript">
+        var lastHintPic;
+        function ShowPicture() {
+            if ($('#Username_ID').val() != '') {
+                $.ajax(
+                    {
+                        type: "post",
+                        data: "username=" + $("#Username_ID").val(),
+                        url: "/webapp/Identity/Login/GetUserPicture",
+                        success: function(data) {
+                            if (data != '') {
+                                $("#userPicture").attr('src', "data:image/png;base64," + data);
+                                $(".avatar-img").show();
+                                lastHintPic = data;
+                            } else {
+                                $(".avatar-img").hide();
+                                lastHintPic = null;
+                            }
+                        }
+                    }
+                );
+            } else {
+                $(".avatar-img").hide();
+                lastHintPic = null;
+            }
+        }
+
+        if (lastHintPic != null) {
+            $(".avatar-img").show();
+            $("#userPicture").attr('src', "data:image/png;base64," + lastHintPic);
+        }
+        $(function () {
+            $('#Username_ID').change(function () {
+                ShowPicture();
+            });
+
+        });
+
+    </script>
+</form>
+</div>
+
+<div class="new-user-window">
+    <h4 class="title-new-user">Novi korisnik</h4>
+    <p>Do tekućeg računa u 5 jednostavnih koraka</p>
+    <a href="/webapp/Applications/BecomeAClient" class="btn-4">Otvorite račun</a>
+</div>  
+
+                    </div>
+                </div>
+
+                <div class="disclaimer">
+                    <p>Copyright © 2016. mts Banka a.d.</p>
+                    <p>Sva prava zadržana</p>
+                </div>
+
+            </div>
+            <!-- /Main -->
+            <div class="modal-container" style="display: none;" id="modal-container">
+                <div class="popup-box modal-box popup-wide popup-1" id="popup-content"></div>
+                <div  class="popup-box popup-wide popup-1" id="popup-content-narrow" style="overflow:auto;"></div>
+            </div>
+            <div class="transaction-nav side-popup -filters" id="popup-content-side" data-utility="customScrollbar">
+            </div>
+            <div class="detail-window popup-box full-break" id="popup-content-wide">
+
+            </div>
+            <div class="overlay-dark"></div>
+
+            
+            
+
+
+<style>
+    #cid-gui {
+        /*top: 830px;*/
+        bottom: 70px;
+        opacity: 1;
+        z-index: 100;
+        position: fixed;
+        /*left: 65px;*/
+        right: 100px;
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        border: 1px solid #d61f38;
+        padding: 5px;
+        background-color: #d61f38;
+        font-family: Arial;
+        text-align: center;
+        color: #3F3F3F;
+        font-size: 11px;
+        height: 50px;
+    }
+
+    #cobrowseInfo {
+        opacity: 1;
+        z-index: 50000;
+        position: fixed;
+        /*left: 65px;*/
+        top: 0px;
+        left: 100px;
+        font: bold 4px/8px "Roboto", sans-serif;
+        border: 1px solid green;
+        padding: 4px;
+        background-color: green;
+        font-family: Arial;
+        text-align: center;
+        color: #3F3F3F;
+        font-size: 11px;
+        height: 50px;
+        width: 100%;
+        opacity: 0.5;
+    }
+
+    #cid-gui:hover {
+        opacity: 1.0;
+    }
+
+    #cid-gui button {
+        display: block;
+        background: #d61f38;
+    }
+
+    #cobrowseInfo button {
+        display: block;
+        background: #d61f38;
+        border-radius: 10px 10px 10px 10px;
+        -moz-border-radius: 10px 10px 10px 10px;
+        -webkit-border-radius: 10px 10px 10px 10px;
+        display: inline;
+    }
+</style>
+
+
+  
+
+
+<script type="text/javascript">
+    window['cometDLInk'] = "https://datapwtest.telekom.rs:8054/csportal/cometd";
+    window['csPortalBaseLink'] = "https://datapwtest.telekom.rs:8054";
+    window['csPortalUsername'] = "eltnyembjzlo";
+    window['csPortalDisplayname'] = "Me";
+    window['csTenant'] = "FTS";
+    window['csLanguage'] = "sr-RS";
+    window['csTsChatCategory'] = "mtsbanka";
+    window['csTsChatSubCategory'] = "mtsbanka";
+    window['csDefaultQuestion'] = "*LiveHelpDefaultQuestion";
+    window['csCustomerNumber'] = "";
+    window['csCafexCorrelationIdPrefix'] = "888999";
+    window['Res_Exit_live_chat'] = "Napuštate chat.";
+    window['Res_Exit_live_chat_details'] = "Da li ste sigurni da napuštate chat? U slučaju ponovnog pokretanja chat sesije moguće je da ćete komunicirati sa drugim agentom.";
+    window['Res_Yes'] = "Da";
+    window['Res_No'] = "Ne";
+    window['Res_Type_your_message_here'] = "Upišite poruku ovde i pritisnite ENTER da je pošaljete.";
+    window['Res_Disconnected'] = "Diskonektovani ste";
+    window['Res_Waiting_for_agent'] = "Čeka se agent";
+    window['Res_Connected'] = "Konektovani ste";
+    window['Res_Connected_to'] = "Konektovani ste na ";
+    window['Res_Disconnecting'] = "Diskonektuje se...";
+    window['EmoticonsUrl'] = "/webapp/images/emoticons";
+    window['TimeInSecondsToStopChatIfNoAvailableAgent'] = 150;
+    window['Res_Chat_session_inactive_warning_caption'] = "Upozorenje o isteku sesije za chat";
+    window['Res_Chat_session_inactive_warning_text'] = "Neaktivni ste skoro 2 minuta usled čega će doći do isteka Vaše chat sesije.";
+    window['Res_Dismiss'] = "Nastavi";
+    window['LiveChatInactitivityBeforeWarning'] = 120;
+    window['LiveChatInactitivityCountDowntime'] = 60;
+    window['Res_Time_remaining'] = "Preostalo vreme:";
+    window['Res_Inactivity_timer_started'] = "Startovan tajmer za prekid sesije neaktivnog korisnika";
+    //if (typeof (window['CafeXCorrelationId']) == "undefined") {
+    //    GetShortCode();
+    //}
+
+    function GetShortCode() {
+        if (sessionStorage['CafeXCorrelationId']) {
+            return sessionStorage['CafeXCorrelationId'];
+        }
+        else {
+            $.ajax
+               ({
+                   method: 'put',
+                   url: "https://datapwtest.telekom.rs:8052/assistserver/shortcode/create",
+                   dataType: 'json',
+                   async: false,
+                   success: function (response) {
+                       sessionStorage['CafeXCorrelationId'] = response.shortCode;
+                   }
+               });
+        }
+    }
+
+    $(document).ready(function () {
+
+        $('#cid-gui').hide();
+
+        AssistSDK.onCobrowseActive = function () {
+            //$('#cid-gui').show();
+            $('#cobrowseInfo').show();
+        }
+
+        AssistSDK.onAgentLeftSession = function () {
+            //$('#cid-gui').show();
+            $('#cobrowseInfo').hide();
+        }
+
+        AssistSDKErrorPopupMsg = "Error creating AssistCSDK popup";
+
+        AssistSDK.onError = function (errorCode, errorMsg) {
+            if (errorMsg == AssistSDKErrorPopupMsg) {
+                DeWeb.Ui.ShowPopup($("#popupBlockerInfo").html(), "narrow", "");
+            }
+        };
+        AssistSDK.onEndSupport = function () {
+            $('#cobrowseInfo').hide();
+            $("[data-utility='endLASupport']").hide();
+            $('.video-starter').show();
+            sessionStorage["CafeXSessionActive"] = false;
+        };
+        AssistSDK.onConnectionEstablished = function () {
+            console.log("RISTO: onConnectionEstablished");
+            //$('.chat-starter').hide();
+        };
+        AssistSDK.onStartSupport = function () {
+            //$('#cid-gui').hide();
+            console.log("RISTO: onConnectionEstablished");
+            //$('.chat-starter').hide();
+        };
+        AssistSDK.onScreenshareRequest = function (agent) {
+            console.log("RISTO: AssistSDK.onScreenshareRequest");
+            return assecoOnShareScreenRequest();
+        }
+        AssistSDK.onConnectionEstablished = function () {
+            //alert(data);
+            sessionStorage["CafeXSessionActive"] = true;
+            $("[data-utility='endLASupport']").show();
+            $(".video-starter").hide();
+            //$('.chat-starter').hide();
+        }
+
+        AssistSDK.onPushRequest = function () {
+            return confirm('Da li želite prihvatiti dokument koji Vam šalje agent?');
+        }
+
+        if (sessionStorage["CafeXSessionActive"] == true || sessionStorage["CafeXSessionActive"] == "true" ){
+            $("[data-utility='endLASupport']").show();
+            $(".video-starter").hide();
+        }
+
+    });
+
+
+    function onPopupBlocked(){
+        DeWeb.Ui.ShowPopup($("#popupBlockerInfo").html(), "narrow", "");
+    }
+
+
+    function makeBaseAuth(user, pwd) {
+        try {
+            var token = user + ':' + pwd;
+            var hash = " ";
+            if (btoa) {
+                hash = btoa(token);
+            }
+            return " basic " + hash;
+        } catch (e) {
+            alert(e.description);
+        }
+    }
+
+
+    function ReconnectUC() {
+        console.log("RISTO: sessionStorage['CafeXSessionToken']=" + sessionStorage['CafeXSessionToken']);
+        if (window["UCReconnected"]) {
+            return;
+        }
+        if (sessionStorage['CafeXSessionToken']) {
+            try {
+                UC.start(sessionStorage['CafeXSessionToken']);
+                connectToTopic();
+            } catch (e) {
+                //console.log("DESCRIPTION:" + e.description);
+                GetShortCode();
+                requestSessionTokenAndCreateAedTopic();
+            }
+        } else {
+            requestSessionTokenAndCreateAedTopic();
+        }
+
+        window["UCReconnected"] = true;
+    }
+
+    function connectToTopic() {
+        UC.onInitialised = function () {
+            console.log("UC.onInitialised START...");
+            topic = UC.aed.createTopic(window['csCafexCorrelationIdPrefix'] + sessionStorage['CafeXCorrelationId']);
+            topic.connect();
+            topic.onConnectSuccess = function (data) {
+                console.log("RISTO: onConnectSuccess")
+            }
+            topic.onTopicUpdate = function (key, value, version, deleted) {
+                console.log("RISTO: onTopicUpdate");
+                if (key == "TS_ESCALATE_MEDIA") {
+                    //debugger;
+                    var obj = JSON.parse(value);
+                    window["sipDestination"] = "sip:" + obj.agentID +  "@10.20.22.131";
+                    if (obj.media == "video") {
+                        if (typeof (sessionStorage["CafeXSessionActive"]) == "undefined" || sessionStorage["CafeXSessionActive"] == false || sessionStorage["CafeXSessionActive"] == "false") {
+                            DeWeb.Ui.ShowPopup($('#videoModalPopUp').html(), 'narrow', '');                           
+                        }
+                    }
+                    else {
+                        try {
+                            if (typeof (sessionStorage["CafeXSessionActive"]) == "undefined" || sessionStorage["CafeXSessionActive"] == false || sessionStorage["CafeXSessionActive"] == "false") {
+
+                                startCobrowseSupport();
+                            }
+                        } catch (e) {
+                            console.log("Greska na inicijalizaciji cobrowse-a, ")
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    function createAedTopic(correlId) {
+        console.log("corelId=" + window['csCafexCorrelationIdPrefix'] + sessionStorage['CafeXCorrelationId']);
+        UC.start(sessionStorage['CafeXSessionToken']);
+        connectToTopic();
+    }
+
+
+
+    function requestSessionTokenAndCreateAedTopic() {
+        var postData = { correlationId: sessionStorage['CafeXCorrelationId'], onlyForAed : "true" };
+        $.ajax
+        ({
+            type: "POST",
+            data: postData,
+            url: "/webapp/CafeX/SessionToken",
+            success: function (data) {
+                sessionStorage['CafeXSessionToken'] = data;
+                createAedTopic(postData.correlationId);
+            }
+        });
+    }
+
+    function endSupport() {
+        console.log("RISTO: End support called LAYOUT!");
+        AssistSDK.endSupport();
+        $('#cobrowseInfo').hide();
+        sessionStorage["CafeXSessionActive"] = false;
+    }
+
+    function closeVideoPopUp() {
+        $('#videoModalPopUp').hide();
+    }
+
+    function closeCobrowsePopUp() {
+        $('#cobrowseModalPopUp').hide();
+    }
+
+
+    function startCobrowseSupport() {
+        console.log("startCobrowseSupport - START");
+        var $this = $("#allowScreenShare");
+        var postData = { correlationId: sessionStorage['CafeXCorrelationId'], allowedOutboundDestination: window['sipDestination'] };
+        $.ajax
+        ({
+            type: "POST",
+            data: postData,
+            url: $this.data("tokenurl"),
+            success: function (data) {
+                console.log("RISTO: Before calling AssistSDK.startSupport!!");
+                AssistSDK.startSupport({
+                    //destination: 'sip:57502@10.20.22.131',
+                    correlationId: window['csCafexCorrelationIdPrefix'] + sessionStorage['CafeXCorrelationId'],
+                    cobrowseOnly: true,
+                    sessionToken: data,
+                    popupURL: $this.data("popupurl"),
+                    locale: $this.data("locale"),
+                    popupInitialPosition: { top: 300, left: 300 }
+                });
+                console.log("RISTO: After calling AssistSDK.startSupport!!");
+            }
+        });
+
+        console.log("startCobrowseSupport - END");
+    }
+
+
+    function assecoOnShareScreenRequest() {
+        return confirm('Molimo Vas da potvrdite ukoliko želite pomoć agenta korišćenjem opcije deljenja ekrana.');
+    }
+
+
+    function userAnswerOnShareScreenRequest() {
+    }
+
+</script>
+
+   
+
+ 
+
+
+
+
+
+<div id="noFreeAgentsDialog" style="display:none">
+    <div class="popup-wrapper">
+        <a href="#" class="close" data-utility="closePopup">X</a>
+        <div class="popup-content" data-utility="customScrollbar">
+            <p id="errorNotificationsContentHolder">Trenutno nema raspoloživih agenata, molimo Vas pokušajte kasnije.</p>
+            <div class="btn-wrapper">
+                <a href="#" class="btn-action-1 cancel" data-utility="closeModal">Ok</a>                
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="cannotStartVideoWhileChatActive" style="display:none">
+    <div class="popup-wrapper">
+        <a href="#" class="close" data-utility="closePopup">X</a>
+        <div class="popup-content" data-utility="customScrollbar">
+            <p>Nije moguće odabrati video kanal podrške dok je aktivna druga chat ili video sesija.</p>
+            <div class="btn-wrapper">
+                <a href="#" class="btn-action-1 cancel" data-utility="closeModal">Ok</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="videoModalPopUp" style="display:none">
+    <div class="popup-wrapper">
+        <a href="#" class="close" data-utility="closePopup">X</a>
+        <div class="popup-content" data-utility="customScrollbar">
+            <p id="errorNotificationsContentHolder">Molimo Vas da potvrdite ukoliko želite da aktivirate video poziv.</p>
+            <div class="btn-wrapper">               
+                <a href="#" class="btn-progress"
+                   data-utility="escalateToVideoSupport"
+                   data-tokenurl="/webapp/CafeX/SessionToken"
+                   data-popupurl="https://uat1.mtsbanka.rs/webapp/blanko.html"
+                   data-locale="sr"
+                   id="requestVideo">Da</a>
+                <a href="#" class="btn-action-1 cancel" data-utility="closeModal">Ne</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="cobrowseModalPopUp" style="display:none">
+    <div class="popup-wrapper">
+        <a href="#" class="close" data-utility="closePopup">X</a>
+        <div class="popup-content" data-utility="customScrollbar">
+            <p id="errorNotificationsContentHolder">Molimo Vas da potvrdite ukoliko želite pomoć agenta korišćenjem opcije deljenja ekrana.</p>
+            <div class="btn-wrapper">                
+                <a href="#" class="btn-progress"
+                   data-utility="allowShareScreen"
+                   data-tokenurl="/webapp/CafeX/SessionToken"
+                   data-popupurl="https://uat1.mtsbanka.rs/webapp/blanko.html"
+                   data-locale="sr"                   
+                   id="allowScreenShare">Da</a>
+                <a href="#" data-utility="denyShareScreen" class="btn-action-1 cancel">Ne</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+   
+
+</script>
+
+<div id="popupBlockerInfo" style="display:none;">
+    <div class="popup-wrapper login">
+        <a href="#" class="close" data-utility="closeModal">X</a>
+        <div class="popup-content" id="error-wide">
+                
+                <p>
+                    Da biste bili u mogućnosti da koristite video poziv morate omogućiti &quot;pop up&quot; za ovu stranicu.
+                </p>                        
+                <div class="btn-wrapper">
+                    <input data-utility="closeModal" class="btn-progress " value="Ok" type="button">
+                </div>            
+        </div>
+    </div>
+</div>
+
+
+            <div id="cobrowseInfo" style="position:fixed;background-color:green;top:0px;left:0px;height:50px;display:none;height:auto;">
+                <b style="font-family:Roboto, sans-serif; font-size:14px;color:White;">VAŠ EKRAN JE SADA DELJEN.</b> &nbsp;&nbsp;
+            </div>
+
+            
+
+
+        </body>
+<!--Live Chat -->
+<link href="/webapp/Themes/MTS/LiveChat/refimplementation/css/ext/bootstrap.css" rel="stylesheet" />
+
+
+  <!-- CafeX LiveAssist LInk-->
+<script type="text/javascript" src="https://datapwtest.telekom.rs:8052/assistserver/sdk/web/consumer/assist.js"></script>
+<script type="text/javascript" src="https://datapwtest.telekom.rs:8052/gateway/adapter.js"></script>
+<script type="text/javascript" src="https://datapwtest.telekom.rs:8052/gateway/fusion-client-sdk.js"></script>
+
+</html>
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<nav class="site-navigation desktop">
+    <div class="container">
+        <ul class="">
+                <li class="home ">
+                    <a class="" data-utility="" href="/webapp/Home">
+
+                        POČETNA STRANA
+                    </a>
+                </li>
+                <li class="bills ">
+                    <a class="subnav-trigger" data-utility="subMenu" href="#">
+
+                        MOJI RAČUNI
+                    </a>
+                        <ul class="sub-menu">
+                                <li class="">
+                                    <a href="/webapp/AccountData/Accounts?AccountTypes=current-account">
+                                        Tekući računi
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/webapp/AccountData/Accounts?AccountTypes=demand-deposit-account,term-deposit-account">
+                                        Štedni računi
+                                    </a>
+                                </li>
+                        </ul>
+                </li>
+                <li class="payments ">
+                    <a class="subnav-trigger" data-utility="subMenu" href="#">
+
+                        PLAĆANJA
+                    </a>
+                        <ul class="sub-menu">
+                                <li class="">
+                                    <a href="/webapp/Payment/CreditTransfers">
+                                        Standardno plaćanje
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/webapp/Payment/CrossBorderTransfers">
+                                        Devizno plaćanje
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/webapp/Payment/Balancetransfers">
+                                        Interni transfer
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/webapp/Payment/PersonalBeneficiaries/GetList">
+                                        Šabloni i primaoci
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/webapp/Payment/Transfers/GetList">
+                                        Lista transfera
+                                    </a>
+                                </li>
+                        </ul>
+                </li>
+                <li class="payment-cards ">
+                    <a class="subnav-trigger" data-utility="subMenu" href="#">
+
+                        PLATNE KARTICE
+                    </a>
+                        <ul class="sub-menu">
+                                <li class="">
+                                    <a href="/webapp/Order/Cards/GetList">
+                                        Detalji platne kartice
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/webapp/AccountData/Statements/GetList?accountTypes=credit-card-account">
+                                        Izvodi platne kartice
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/webapp/Order/Cards/GetList?type=CardsManagement">
+                                        Upravljanje platnom karticom
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/webapp/Order/Cards/GetList?type=CardsLimits">
+                                        Limiti potrošnje
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/webapp/AccountData/Transactions/List?accountTypes=credit-card-account">
+                                        Transakcije platne kartice
+                                    </a>
+                                </li>
+                        </ul>
+                </li>
+                <li class="loans ">
+                    <a class="" data-utility="" href="/webapp/AccountData/Accounts?AccountTypes=term-loan-account">
+
+                        KREDITI
+                    </a>
+                </li>
+                <li class="exchange ">
+                    <a class="subnav-trigger" data-utility="subMenu" href="#">
+
+                        MENJAČNICA
+                    </a>
+                        <ul class="sub-menu">
+                                <li class="">
+                                    <a href="/webapp/Exchange/ExchangeRateLists/GetForDate">
+                                        Kursna lista
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/webapp/Exchange/ExchangeOrders/Purchase">
+                                        Kupi devize
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/webapp/Exchange/ExchangeOrders/Sell">
+                                        Prodaj devize
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="/webapp/Exchange/ExchangeOrders/GetList">
+                                        Transakcije
+                                    </a>
+                                </li>
+                        </ul>
+                </li>
+                <li class="catalogue ">
+                    <a class="" data-utility="" href="/webapp/Product/Products/">
+
+                        KATALOG PROIZVODA
+                    </a>
+                </li>
+                            <li class="multioption">
+                    <a href="#" data-utility="popupFromLink" data-popup-type="wide" data-href="/webapp/Info" class="contact" style="cursor: pointer;">
+                        <span>Kontakt</span>
+                    </a>
+                    <a href="#" data-utility="popupFromLink" data-popup-type="wide" data-href="/webapp/Dialog/FAQs/GetList" class="help" style="cursor: pointer;">
+                        <span>Pomoć</span>
+                    </a>
+                </li>
+
+        </ul>
+    </div>
+</nav>
+</body>
+</html>

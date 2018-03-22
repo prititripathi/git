@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<h1>Hey Welcome</h1>
+
+<h2>Hello!</h2>
+
+</body>
+
+
+<script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="http://10.10.10.74:8080/assistserver/sdk/web/consumer/assist.js"></script>
+
+  <script>
+$(document).ready(function(){
+    $("h1").mouseover(function(){
+        $("h2").show();
+    });
+    $("h1").mouseout(function(){
+        $("h2").hide();
+    });
+});
+</script>
+
+</html>
